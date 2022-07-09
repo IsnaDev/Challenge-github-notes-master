@@ -13,7 +13,8 @@ Project challenge on Git and Github from DIO (first repository)
 - Introduction to the programming language;
 - Introduction to Git and Github;
 - Introduction to creating websites with HTML5 and CSS3;
-- Positioning elements with Flexbox in CSS.
+- Positioning elements with Flexbox in CSS;
+- Web development.
 
 
 ## 🤝👩🏻 Collaborator
