@@ -1,0 +1,91 @@
+### Introdução à lógica e à programação
+
+Lógica: coerência de raciocínio, de ideias,.
+
+Lógica de programação: contextualizar a lógica na programação de computadores, buscando a melhor sequência de ações para solucionar um problema.
+
+Abstração: habilidade de concentrar nos aspectos essenciais de um contexto qualquer, ignorando características menos importantes ou acidentais.
+
+
+
+###### Algoritmo e pseudocódigo
+
+Algoritmo: é uma sequência de passos que resolve um problema;
+
+Pseudocódigo: é uma forma genética de escrever um algoritmo, utilizando uma linguagem simples, de forma a ser entendida por qualquer pessoa;
+
+Entrada: informação importante para conseguir resolver o problema (conjunto de valores);
+
+Saída: resultado final
+
+​	saída programada: condicional - aguarda o dispositivo; e incondicional;
+
+​	saída por interrupção: definida pelos periféricos.
+
+Técnica linear: modelo de desenvolvimento e resolução. Modelo tradicional. Não tem vínculo  (estrutura hierárquica para programação de computadores);
+
+Técnica estruturada: modelo de desenvolvimento e resolução. Organização, disposição e ordem dos elementos essenciais que compõem um corpo (concreto ou abstrato):
+
+Técnica modular: partes independentes que são controladas por um conjunto de regras.
+
+
+
+#### Fundamentos de algoritmos
+
+##### Variável
+
+É uma estrutura que recebe um tipo de dado, mas sem saber o valor. Pode assumir qualquer valor de um determinado conjunto de valores.
+
+###### Tipos de dados
+
+- número (inteiros e reais);
+- caracteres;
+- lógico (verdadeiro- 1 e falso - 0);
+- booleano.
+
+###### Papéis de uma variável
+
+- ação: modificação de estado;
+- controle: vigiado, controle de algo (estrutura...).
+
+###### Instruções primitivas
+
+São linguagens de palavras-chaves (vocabulário) de uma determinada programação que tem por finalidade comandar um computador que irá tratar os dados.
+
+cálculos matemáticos (variáveis e constantes) ==> operadores (binários e unários).
+
+###### Estrutura condicional
+
+- Condução: estado de uma pessoa ou coisa;
+
+Condução simples: condição ==> operação
+
+Condução composta: condição ==> operação
+
+​						     ==> exceção
+
+Condução encadeada (condição excessiva): condição ==> condição ==> exceção
+
+									 ==> operação
+
+
+
+- Condicional: que expressa uma condição ou suposição ou implica uma suposição ou hipótese.
+
+
+
+AND: condição verdadeira (todas devem ser satisfatórias/todas verdadeiras);
+
+OR: condição verdadeira (apenas uma das condições deve ser verdadeira);
+
+Not: operador de negação (inversão do resultado lógico: condição verdadeira ==> resultado falso; condição falsa ==> resultado verdadeiro)
+
+
+
+###### Vetores
+
+Caracterizado por uma variável dimensionada com tamanho pré-fixado (matrix unidimensional - container).
+
+Matrix: é uma tabela organizada em linhas e colunas no formato M (horizontal - linha) X N (vertical - coluna).
+
+Funções: são blocos de instruções que realizam tarefas específicas, identificados por nomes e parâmetros.

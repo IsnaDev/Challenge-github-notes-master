@@ -1,0 +1,23 @@
+## Internet
+
+Na década de 1970 e meados de 80, a internet era algo restrito aos militares das forças armadas dos EUA. Por isso, os primeiros sites que nasceram foram vinculados a órgãos de defesa norte-americanos.
+No dia 1 de janeiro de 1985, a página da Advanced Research Projects Agency (ARPA) => (agência norte-americana de pesquisa e desenvolvimento do Departamento de Defesa dos Estados Unidos) foi ao ar usando os domínios .net, .org, .edu, .gov, .mil, .arpa. Exceto pelo último, todos viraram extensões usadas até hoje para designar sites específicos da web. Depois, acabou virando apenas arpa.mil e, a seguir, ganhou uma letra “d” no início, se tornando darpa.mil.
+Embora tenha passado por diversas atualizações, o domínio original nordu.net continua ativo até os dias atuais, o que pode ajudar a classificá-lo como o mais antigo do mundo fora da esfera militar.
+
+#### Domínio comercial mais antigo da internet
+
+Com a expansão da internet no serviço de defesa, começou a surgir a demanda de empresas privadas pelo uso da tecnologia. No âmbito acadêmico, embora ainda não houvesse domínios registrados, já existia o sufixo .edu, mas ninguém tinha pensado na aplicação comercial da rede de computadores. Foi aí que surgiu a necessidade de identificar os sites mercadológicos e convencionou-se o uso do .com.
+Mesmo antes de a internet ser aberta como é hoje, uma empresa de tecnologia já estava sedenta por adentrar neste mundo desconhecido. A Symbolics Computer Corporation, com sede em Massachusetts, nos Estados Unidos, entrou para a história ao ter o primeiro endereço comercial do mundo: symbolics.com, cadastrado em 15 de março de 1985.
+
+##### Symbolics.com
+Data de registro: 15 de março de 1985
+Continua no ar: sim, porém com outro foco.
+Symbolics.com não pertence mais à empresa que o registrou, que era fabricante de estações de trabalho. Após a falência da empresa, em 1996, o domínio ficou inativo por muitos anos, até que um investidor resolveu comprá-lo dos antigos donos em 2009.
+Hoje a página está ativa e serve como uma espécie de homenagem aos primórdios da internet. Lá se encontra dados curiosos, informações sobre os visitantes (a página recebe muitos acessos devido a sua importância histórica), detalhes sobre a antiga Symbolics e, claro, bastante destaque para o comprador do endereço.
+
+
+#### Qual foi o primeiro blog da Internet?
+O primeiro blog da internet foi criado por um brasileiro. Em 1994, o cientista do MIT Media Lab, Claudio Pinhanez, criou um site chamado “ Open Diary ”
+
+#### Qual foi a primeira compra feita na internet?
+Em 11 de agosto de 1994, um amigo de Dan Kohn, uma das primeiras pessoas a usar a internet, comprou um CD do Sting pela internet. Na época as pessoas acreditavam que o comércio não vingaria na rede. Elas diziam que era loucura e que isso nunca iria funcionar.

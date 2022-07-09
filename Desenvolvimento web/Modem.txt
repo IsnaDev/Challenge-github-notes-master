@@ -1,0 +1,11 @@
+### Modem
+MOdulator-DEModulator
+Hardware que converte dados em formato que possa ser transmitido de um computador para outro e lido por outro.
+
+
+### Roteador (Não se importa para quem esta enviando)
+Distribuir internet para um ou mais dispositivos de uma rede.
+Pode fazer a comunicação entre redes. 
+
+### Switch (se preocupa para quem esta enviando)
+Distribui internet para um ou mais dispositivos de rede. Criado para ser inteligente (envia apenas para quem foi solicitado)

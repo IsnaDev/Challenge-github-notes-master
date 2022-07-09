@@ -1,0 +1,84 @@
+## Pensamento Computacional
+
+Refere-se ao processo de pensamento envolvido na expressão de solução em passos computacionais ou algoritmos que podem ser implementados no computador.
+
+04 pilares:
+1. Decomposição: dividir um problema complexo em subproblemas;
+2. Resconhecimento de padrões: identificar padrões ou tendências (padrão comportamental) (similaridades e diferenças entre os problemas);
+3. Abstração: extrapolar o conceito do problema para uma forma generalista (pegar algo específico e generalizar);
+4. Design de algoritmo: automatizar - definir passo a passo a solução do problema (imput/entrada - operator/operação - output/saída).
+
+
+
+##### Habilidades Complementares
+
+Raciocínio lógico (habilidade de treinamento): é uma forma de pensamento estruturado ou raciocínio que permite encontrar a conclusão ou determinar a resolução de um problema.
+
+- Indução: fenômeno observado - usado nas ciências experimentais;
+- Dedução: previsões e explicações - usado nas ciências exatas;
+- Abdução: conclusão/premissa - usado em processos investigatórios e diagnósticos.
+
+
+
+##### Aperfeiçoamento/melhoramento/aprimoramento/refinamento
+
+A partir de uma solução, determinar pontos de melhora e refinamento.
+
+- Encontrar soluções suficientes;
+- Otimizar processos;
+- simplificar linhas de códigos;
+- Funções bem definidas;
+- Processo contínuo;
+- Presente em todas as etapas.
+
+Vantagens: maior compreensão, mas eficiência, menos tempo, menos armazenamento (computação paralela). Desenvolver soluções <==>aperfeiçoar.
+
+
+
+##### Pilares do pensamento computacional
+
+- Decomposição: primeiro passo da resolução de problema dentro do conceito de pensamento computacional (é preciso compreender como executar cada etapa de um pensamento computacional).
+
+Dado um problema complexo, devemos quebrá-lo em problemas menores. Portanto, problemas mais fáceis e gerenciáveis.
+
+- Estratégia: análise (processo de quebra e determinar partes menores e gerenciáveis).
+- Síntese: combina os elementos recompondo o problema original
+
+processo de reconstrução - consiste em reunir elementos distintos em um único elemento; fundir os elementos de maneira coerente.
+
+
+
+##### Ordem de execução de tarefas menores
+
+- Sequencial: dependência entre tarefas - executadas em filas;
+- Paralelo: podem ser executadas concomitantemente.
+
+
+
+##### Reconhecimento de padrões
+
+Gerenciar com objetivo de obter resolução para problemas diferentes. Modelo base, estrutura invariante, repetição.
+
+
+
+##### Classificação dos objetos (classes e objetos) - dependo do domínio e tipo de objeto.
+
+Padrões - representação de atributos, aprendizagem, conceito associado ao objeto, armazenar dados, regras de decisão. Processo utilizado por plataformas diferentes.
+
+Abstração/generalização - Apreciação intelectual que consiste em reunir numa classe geral, um conjunto de seres ou fenômenos similares. Processo intelectual de isolamento de um objeto da realidade.
+
+
+
+### Algoritmos
+
+##### Desenvolvimento do programa
+
+- Análise - estudo e definição dos dados de entrada e saída;
+- Algoritmo - descreve o problema por meio de ferramentas narrativas, fluxograma ou pseudocódigo;
+- Codificação - o algoritmo é codificado de acordo com a linguagem de programação escolhida.
+
+##### Métodos
+
+- Narrativa- utilização da linguagem natural. Diversas interpretações diferentes;
+- Fluxograma - utilização de símbolos pré definidos. Conhecimento prévio da estrutura e símbolos;
+- Pseudocódigo - Portugol (passos a serem seguidos). Regras definidas.

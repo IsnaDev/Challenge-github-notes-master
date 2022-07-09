@@ -1,0 +1,27 @@
+### TCP/IP
+Protocolos de comunicação entre computadores em rede:
+    - Transmission Control Protocol - protocolo de controle de transmissão;
+    - Internet Protocol - protocolo de nternet
+Modelo de comadas
+
+### Quatro camadas:
+1. física (placa de rede...);
+2. rede (IP);
+3. transporte (TCP, UDP);
+4. aplicação (FTP, SMTP, HTTP).
+
+#### TCP x UDP
+- UDP (manda os pacotes de toda forma sem saber quem recebeu ou não)
+    rápido, confiável, livestream.
+
+- TCP (se preocupa se estão recebendo a menssagem corretamente)
+    voltado à conexão, handshake, integridade, ordem dos dados, aplicativo de mensagens de texto.
+
+## Portas (ports)
+Local onde os dados sairão e chegarão.
+20: FTP 
+22: SSH (conexão segura para realizar comandos entre 2 computares)
+25: SMTP (envio de email)
+53: DNS (tradutos de nome para IP e de IP para nome)
+80: HTTP (requisição simples para a internet)
+443: HTTPS (requisição segura para a internet)

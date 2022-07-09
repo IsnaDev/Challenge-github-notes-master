@@ -1,0 +1,190 @@
+## Git
+
+O Git é um sistema de controle de versão distribuído.
+Trabalhando em uma empresa, esse é um ótimo recurso, pois permite que tudo aconteça de maneira muito mais rápida e fluida.
+O Git é usado principalmente para rastrear alterações no código fonte.
+O Git ajuda os programadores a coordenar suas ações e fluxos de trabalho.
+
+
+
+## Github
+
+O GitHub é um serviço de hospedagem. Ele é usado para rastrear alterações de código fonte. Embora ele forneça todas as funções do Git,
+o GitHub também adiciona algumas outras funcionalidades.
+
+Diferença entre Git e o Github
+o Git é uma ferramenta que é usada para facilitar a vida de um programador, enquanto o GitHub é um serviço que é usado para hospedar projetos Git.
+
+
+
+#### link
+
+Aulas do módulo criando seu primeiro repositório no Github
+https://drive.google.com/file/d/1IZu0qohv1JOmxjEra1lknDiiStU68bl4/view
+
+
+
+## Git e Github
+
+São complementares, mas são diferentes.
+
+- Controle de versão;
+- Armazenamento em nuvem;
+- Trabalho em equipe;
+- Melhorar o código;
+- Reconhecimento.
+
+
+
+SHA é um conjunto de funções hash criptografadas projetadas pela NSA. A encriptação fera conjuntos de caracteres identificador de 40 dígitos.
+
+
+
+#### Objetos fundamentais
+
+- Blobs
+
+  O Git manipula através de objetos. Os arquivos ficam guardados no blob (tipo, tamanho, \0, o conteúdo do arquivo);
+
+- Tree
+
+  Responsável por montar a estrutura como também apontar outros arquivos e outras árvores. (nome, tipo, tamanho, \0, o conteúdo do arquivo);
+
+- Commit
+
+  aponta para:
+
+  tree								  			 ==> SHA1
+
+  parente (commit anterior)    ==> SHA1
+
+  aujtor 									     ==> perkes
+
+  mensgem							      	 ==> "inicio.."
+
+  timestramp
+
+
+
+#### Chave SSH
+
+Como gerar:
+
+=> no Git bash:
+
+- ssh-keygen -t ed25519 -C email do github
+- digita uma senha
+
+Para acessar:
+
+==> no Git bash:
+
+- cd /c/user/isnaíra/.ssh/
+- ls (vai surgir as chaves: pública e privada )
+- cat id.ed25519.pub (para acessar o conteúdo)
+- copia chave
+
+==> No Github:
+
+- settings
+- SSH and GPG Keys
+- new SSH Key
+- add um título (para identificação do ID)
+- cola a chave que foi criada no Git bash
+- add SSH Key
+- Autentica
+
+==> no Git bash:
+
+- eval $(ssh-agent) -s (gera o número de processo)
+- ssh-add id-ed25519
+- digite a mesma senha criada anteriomente
+
+
+
+### Token de acesso pessoal
+
+digita o nome e a senha (gera um token no github)
+
+==> No Github:
+
+- setting
+- developer setting
+- personal acess tokens
+- generate new token
+- coloque uma identificação
+- data de validade (não lembro o quê)
+- marcar (não lembro o quê)
+- generate token
+- copia o token (guarda em uma pasta confiável, pois o token não será mais mostrado, só se fizer o procedimento novamente criando um novo token)
+
+
+
+#### Clonando um repositório
+
+copiar o link do repositório que deseja clonar
+
+==> No Git bash
+
+git clone + link do repositório que deseja clonar
+
+
+
+#### Criando README.md
+
+##### ==> no VS Code
+
+é só criar uma pasta README.md
+
+
+
+##### ==> no Github
+
+- add README
+- commit new file
+
+==> no VS Code
+
+- git pull
+- modifica o README
+- git add .
+- git commit -m "fala qual a alteração"
+- git push
+
+
+
+#### Enviando um repositório para o Github
+
+==> no VS Code
+
+- git confi --global user.name "nome que está no github"
+- git confi --global user.email "email do github"
+- git init
+- git add .
+- git commit -m "coloque a alteração feita"
+
+==> no Github
+
+- repositories
+- new
+- repository name
+- create repository
+
+==> no VS Code
+
+- git remote add origin " link do repositório criado no Github"
+- git push -u origin master ou main
+
+
+
+#### Alguns comandos 
+
+- git help => ajuda
+- git status => mostra o staus atual do repositório
+- git config -- global user.name "nome" ou user.email "email"
+- git config --list => confirma o nome e o email
+- git init => inicia um repositório na pasta atual
+- git add . => add todos os arquivos para serem comitados
+- git commit -m "" => add um commit
+- git push => sobe para o github as alterações feito no local
+- git pull => desce para o local as alterações feitas no github

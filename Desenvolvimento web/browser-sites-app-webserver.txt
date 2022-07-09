@@ -1,0 +1,41 @@
+### Browser
+
+Existem muitas formas para acessar a internet sem um browser. Mas para ver um site é preciso um programa que interprete as lnguagens de programação (LP) e as transforme em algo compreensível por um humano.
+
+#### Característica
+Sabe identificar várias LP, linguagem de marcação e conteúdo multimedia
+Fazem muito mais que isso: exigem plug-ins, ou add-ons, que ajudam na navegação
+Cache e cookies
+
+#### Página estática (Sem interação) X página dinâmica (com interação)
+http://archive.org/web/ - como eram antigamente os sites mais famosos de hoje em dia.
+
+
+### Site
+Página da internet com diversos propósitos. pOdem ser feitas em diversas LP.
+O D/XHTML caindo em desuso.
+
+
+### Aplicativo
+Um software que é executado no navegador;
+Um app de celular, muitas vezes, nada mais é do que uma espécie de navegadores.
+Hoje em dia, já quase não existe diferença entre site e aplicativo, e o primeiro está em declínio;
+Outra diferença terminológica que está sumindo é entre program/ e aplicativo.
+
+
+### E-commerce
+"E", assim como em email, significa "electronic" (comércio eletrônico).
+Site de compra e venda com sistema de pagamento. O sistema de pagamento pode ser exterior ao site (PicPay, Boleto, PayPal, Mercador Pago...)
+
+### Web-server (tipos: estático e dinâmico)
+O estático é um servidor físico onde são armazenados arquivos, software e/ou banco de dandos.
+O dinâmico se refere aos software que estão presente no servidor físico.
+    arquivos (file server)
+    aplicações (application server)
+    banco de dados (database)
+    tudo junto e misturado em apenas um (mais comum)
+    Um site, ou aplicativo, precisa estar hospedado em servidor para poder ser acessado.
+    Os dados de um site precisam estar em servidor.
+    O banco de dados de um site ou aplicativo precisa estar em um servidor.
+
+o web-service é uma interface disponível para fazer requisições e consultas em bancos de dados inacessíveis.

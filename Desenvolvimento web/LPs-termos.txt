@@ -1,0 +1,57 @@
+### Principais linguagens
+
+HTML
+CSS
+JavaScript (jQuery, AJAX, diversas libs)
+PHP
+.NET
+ASP
+JavaScriptRuby (on Rails)
+Python
+Perl
+C/C++/C#
+
+#### Termos comuns
+404 - erro (página não existe)
+Algoritmo - seguencia de passos para executar uma tarefa
+ALt - texto alternativo
+API - funcionalidade para executar outras funções em um site
+Biblioteca/dll - conjunto de ferramentas disponíveis que permite realizar várias funções
+Bootstrap - fremeworks mais usado (javascript)
+Código fonte - instruções feita de linguagem de programação para executar um site (exemplo)
+Controle de versão - software de controle. tira fotos de cada momento do código
+Cookeis - rastro dos sites
+Debug - processo para tentar descobrir o problema
+Deploy - pacote de parte para ser publicado
+Documentação - extrena (ex: manual do usuário) ou interna (cometários)
+Domínio - é o site
+DPI - proporção de pontos na tela
+Favicon - 
+Fremeworks - ferramenta para desenvolver o aplicativo
+FTP - protocolo de comunicação para troca de arquivo
+Github/SVN/CVS - controladores de versão de software
+HTTP (s) - protocolo de comunicação na internet
+Método ágil - técnica de desenvolvimento de software que visa a versaõ mais rápida
+MVP - mínimo produto viável que já tem alguma função
+MySQL - linguagem de dados
+Resolução - quantidade de pixel que a tela tem
+Sistema operacional (SO) - linux, windows...
+Solução - um programa ou um conjunto de ferramentas que pode se feito o gerenciamento
+SSL - camada de segurança do site
+WYSIWYG - pequenos editores de texto imbutidos no site
+
+
+# Exercício:
+
+## Apache
+O Apache é um servidor de código aberto e nome oficial é Apache HTTP Server, mantido pela Apache Software Foundation, e alimenta cerca de 46% de todos os sites hospedados na internet.
+O Apache permite que donos de sites mostrem e mantenham seus conteúdos na internet – daí o nome de “servidor de internet”. Ele é um dos mais antigos e confiáveis servidores de internet. A sua primeira versão, por exemplo, foi lançada em 1995, há mais de 20 anos.
+
+## MySQL
+O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface. É atualmente um dos sistemas de gerenciamento de bancos de dados mais populares da Oracle Corporation, com mais de 10 milhões de instalações pelo mundo.
+
+## PHP
+PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web.
+
+
+site: w3schools.com

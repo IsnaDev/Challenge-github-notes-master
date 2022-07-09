@@ -1,0 +1,60 @@
+## Introdução a linguagem de programação
+
+Álgebra booliana: base dos computadores.
+
+- Problema de decisão: caráter lógico (sim ou não). Ideia de pertencimento (problema decidual);
+- Problema de busca: relacionamento binário;
+- Problema de otimização: maximizar ou minimizar uma função.
+
+
+
+##### Linguagem de programação
+
+Método padronizado composto por um conjunto de regras sintáticas e semânticas de implementação de um código fonte.
+
+
+
+##### Característica de um programa
+
+Desenvolvimento de programas (diretrizes):
+
+- Legalidade: coerência nas instruções;
+- Redigibilidade: facilidade de escrita de código e coerência nas instruções:
+- Confiabilidade: faz o que foi programado para fazer;
+- Custo: análise de impacto.
+
+
+
+##### Análise de código
+
+- Léxica: patrocinar, classificar e eliminar - elementos tokens;
+- Sintática: sistema linguístico que interliga os constituintes de sentença, atribuindo-lhe uma estrutura;
+- Semântica: incide sobre entre significantes, como: palavras, frases, sinais e símbolos.
+
+
+
+##### Paradigmas de programação
+
+Forma de resolução de problemas com diretrizes e limitações específicas de cada paradigma utilizando linguagem de programação.
+
+###### Classsificação
+
+- Orientação à objeto (+ usado);
+- Procedural: chamada sucessivas e procedimentos separados;
+- Funcional: instruções baseadas em funções;
+- Estruturado (+ usado): estrutura de blocos aninhados;
+- Computação distribuída: funções executadas de forma independente;
+- Lógica.
+
+
+
+##### Orientação á objeto
+
+Paradigma de orientação baseado na utilização de objetos e suas interações. Um objeto é descrito por características específicas (o que tenho), comportamentais (sou capaz de fazer) e estado (como faço).
+
+###### Pilares de orientação
+
+- Herança;
+- Encapsulamento;
+- Polimorfismo;
+- Abstração.

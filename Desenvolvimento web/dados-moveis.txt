@@ -1,0 +1,45 @@
+### MMS
+Transmissão de mensagens multimídia (áudio, vídeo) por meio de uma espécie de conexão de dados primitiva.
+
+1G => analógico: 10kbps
+2G => digital (GSM): 97kbps
+GPRS => 2,5G: 32-80kbps (dados + voz)
+EDGE => 2,75G: 128-236kbps
+3G => 7Mbps
+4G => 22,1Mbps
+5G => 10Gbps
+
+
+### wi-fi
+
+IEEE 802.11: 2,4 GHz (frequência), 2Mbps (velocidade)
+IEEE 802.11a: 5 GHz (frequência), 54Mbps (velocidade)
+IEEE 802.11b: 2,4 GHz (frequência), 11Mbps (velocidade) (diminuição de interferência)
+IEEE 802.11g: 2,4 GHz (frequência), 54Mbps (velocidade)
+IEEE 802.11n: 2,4 GHz / 5 GHz (frequência), 150-600Mbps (velocidade)
+
+
+### Segurança
+
+WEP: chaves de 64 bits e de 128 bits
+WPA: chave trocada periodicamente
+WPA2 (AES) (802.11i) => mais lento, mais seguro e mais processamento
+
+
+### Dispositivos na rede
+Impressora, scanner, chromecast
+
+
+### Bluetooth
+Não depende da internet.
+Conexão ponto-a-ponto.
+
+ 1 (Classe) => 100mW (potência máxima) - 100m de alcance;
+ 3 (Classe) => 2,5mW (potência máxima) - 10m de alcance;
+ 1 (Classe) => 1mW (potência máxima) - 1m de alcance.
+
+1.2 (versão) => 1 Mbps (taxa de transmissão);
+2.0+EDR (versão) => 3 Mbps (taxa de transmissão);
+3.0 (versão) => 24 Mbps (taxa de transmissão);
+4.0 (versão) => 25 Mbps (taxa de transmissão);
+5.0 (versão) => 50 Mbps (taxa de transmissão).
