@@ -1,0 +1,52 @@
+## OPERADORES
+
+### Atribuição
+
+=   atribuindo valor exemplo: x = y; equivale a x = y
++=  adicionando um valor da sua variável a outra variável exemplo: x += y; equivale a x = x + y
+*=  exemplo: x *= y; equivale a x = x * y
+/= exemplo: x /= y; equivale a x = x / y
+%=  exemplo: x %= y; equivale a x = x % y
+
+
+### Aritmética
+
++   Adição
+-   subtração
+*   multiplicação
+**  exponencial
+/   divisão
+%   módulo
+++  incrementar
+--  decrementar
+
+
+### Comparação
+
+==  igual adicionando
+=== mesmo valor e mesmo tipo
+!=  diferente
+!== valor e tipo diferentes
+>   maior que
+<   menor que
+>=  maior ou igual
+<=  menor ou igual
+
+
+### Lógica
+
+&&  "e" lógico      - duas afirmações verdadeiras
+||  "ou" lógico     - apenas uma das afirmações seja verdadeira
+!   "não" lógico    - o oposto do dados
+
+
+### Condicional (ternário)
+
+condicional ? expressão1 : expressão2
+
+mesmo que usar o if e else:
+if(condicional) {
+    expressão1;
+} else {
+    expressão2
+}

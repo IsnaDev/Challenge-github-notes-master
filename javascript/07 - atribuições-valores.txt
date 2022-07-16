@@ -1,0 +1,20 @@
+ ### Atribuições de valores
+
+ Original Variable as Strings   ex: some awesome var
+ Camel Case                     ex: someAwesomeVar
+ Snake Case                     ex: some_awesome_var
+ Kebab Case                     ex: some-awesome-var
+ Pascal Case                    ex: SomeAwesomeVar
+ Upper Case Snake Case          ex: SOME_AWESOME_VAR
+
+
+ ### VAR E LET
+
+ Escopos diferentes:
+    Escopo global      => var
+    Escopo de bloco    => let
+
+Hoisting: atribuir um valor a uma variável antes de declarar ela; Somente a var
+Redeclaração: só com o var
+Reatribuição: sem palavra reserva
+camelCase
