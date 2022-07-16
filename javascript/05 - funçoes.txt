@@ -1,0 +1,90 @@
+## Funções
+
+São blocos de comandos e instruções para a execução de
+determinadas tarefas:
+
+Ex.: function nomeDaFuncao() {
+${instrucao};
+}
+
+nomeDaFuncao();
+
+### Como declarar?
+
+Geralmente se utiliza a palavra reservada “function” seguida de
+parênteses “()” e chaves “{}”:
+
+Ex.: function funcao() {
+console.log(“mensagem”);
+}
+
+funcao();
+
+() – indica que é um objeto do tipo function;
+{} – indica que é um bloco de instrução;
+
+### Funções com parâmetros
+As funções podem receber em sua declaração, parâmetros, que
+servem como variáveis, onde sua atribuição pode ser feita durante
+a chamada da função:
+
+Ex.: function nomeDaFuncao(parametro) {
+${instrucao};
+}
+
+nomeDaFuncao(valorDoParametro);
+
+### Funções com parâmetros
+
+Ex.: function mensagem(primeiro, segundo) {
+console.log(primeiro, segundo);
+}
+
+nomeDaFuncao(“Tudo certo”, “jovem!”);
+
+### Funções declarativas
+
+São funções que possuem o uso mais comum, deve ser declarada
+usando a palavra reservada “function” seguida do nome da
+função, parênteses “()” e chaves “{}”:
+
+Ex.: function nomeDaFuncao() {
+${instrucao};
+}
+
+// o nome da função é obrigatório;
+
+### Expressões de Funções
+
+São funções atribuídas à expressões. A nomeação das funções por
+expressão é opcional:
+
+Ex. 1: var funcao = function nomeDaFuncao() {
+
+${instrucao};
+}
+
+Ex. 2: var funcao = function() {
+
+${instrucao};
+};
+
+### Arrow Function
+
+São funções de expressão de sintaxe curta. Arrow functions
+sempre serão anônimas, e portanto não podem ser nomeadas.
+deve ser declarada com parênteses "()", seguido de "=>" e depois
+chaves "{}"
+
+Ex. 1: var funcao = () => {
+${instrucao};
+}
+
+### Criando uma calculadora
+Para este exercício vamos utilizar alguns métodos nativos do
+JavaScript:
+
+• Number() – para converter valores em números;
+• Prompt() – para registrar entradas de usuário;
+• Alert() – para mostrar mensagem ao usuário;
+• Template Strings – para usar strings junto com expressões;

@@ -1,0 +1,38 @@
+## JavaScript
+É uma linguagem interpretada (tempo real);
+Baseada em protótipos (base para as estruturas de dados) (conjunto de funções e possibilidades em comum em todas as estruturas de dados)
+Multiparadigma (pode escolher trabalhar com orientação com objetos, programação funcional, ou programação estruturada)
+Comumente utilizada  em aplicações web client-side (parte da aplicação que tem interação com o usuário)
+Segue o padrão ECMAScript (padrão para várias linguagem) (conjunto de normas de funcionalidades oficionalmente estão sendo lançadas)
+
+### Evolução
+1997 - ECMAScript 1
+1998 - ECMAScript 2
+1999 - ECMAScript 3
+        regular expression - validação de email
+        try/catch - tratar erros
+     - ECMAScript 4 - nada de relevante
+2009 - ECMAScript 5
+        "strict mode"
+        JSON support
+        String.trim()
+        Array.isArray()
+        Array Iteration Methods
+2015 - ECMAScript 6 - várias atualizações relevantes
+
+### DOM
+Document Object Model
+Estrutura dos elementos dentro da janela.
+
+### Frameworks e bibliotecas
+VueJS, Angular, React, jQuery
+
+### Páginas para ajudar na programação
+- MDN web docs - mozilla
+- w3c
+- github
+- linkedin
+- twiter
+- youtube
+- DIO
+- stack overflow
