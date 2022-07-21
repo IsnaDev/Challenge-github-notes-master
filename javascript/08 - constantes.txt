@@ -1,0 +1,87 @@
+## Constantes
+Declarada em SNAKE_UPPER_CASE;
+Escopo de de bloco;
+Não faz Hoisting.
+
+var:    globlal ou local; redeclara; reatribui; Hoisting
+const:  bloco
+let:    bloco; reatribui
+
+### Tipos
+
+Estruturas de dados: JavaScript é uma linguagem de tipagem dinâmica. Ou seja, antes de declarar um valor, você não especifica o tipo dele.
+
+#### Strings
+comumente utilizada para textos;
+Valores declarados entre spas ou crases.
+
+Para separa por letras usa split("")
+ex: let frase = "ola!"
+frase.split("")
+retornar: (14) ["o", "l", "a", "!", " ", "t", "u", "d", "o", " ", "b", "e", "m", "?"]
+
+Para separa por palavras usa split(" ")
+ex: let frase = "ola! tudo bem?"
+frase.split("")
+retorna: (3) ["ola!", "tudo", "bem?"]
+
+Para procura uma palavra usa includes("a palavra")
+frase.includes("tudo")
+retorna: true
+
+Para saber se começa com uma letra usa startsWith("a letra")
+frase.startsWith("o")
+retorna: true
+
+Para saber se termina com uma letra usa andsWith("a letra")
+frase.andsWith("?")
+retorna: true
+
+Para mudar alguma coisa na frase usa replace("o substituído", "o substítuto")
+frase.replace("!", ",)
+retorna: "ola, tudo bem?"  => retorno de outra frase, outra string (modificada), a original não é modificada.
+
+Métodos importantes:
+Concatenação (juntar), propriedade length (tamanho da string), iterabilidade (checar cada index/caractere da string),formatação, index de letras.
+
+
+#### Numbers
+math.PI => valor de PI
+math.floor => arredonda para baixo
+math.ceil => arredonda para cima
+
+#### Booleans
+Retorna true ou false;
+
+
+#### Array
+array.push      => adiciona um elemento no final do array
+array.shift     => tira um elemento do inicio do array
+array.unshift   => adiciona elemento no inicio do array
+array.includes  => se tem algum elemento específico no array
+array.every     => se todos os itens são igual a um elemento
+array.some      => se algum item tem o elemento específico
+array.reverse   => reverte os itens do array
+
+#### Objetos
+Estrutura:
+let obj {
+    name: "eu",
+    age: 12,
+};
+
+object.values()   => saber os valores do objeto
+object.keys()     => saber as chaves (ex: name e age)
+
+para retornar: 
+obj.name ou obj["name]
+
+para adicionar:
+obj["adress"] = rua 17
+
+#### Empty, null, underfined
+Empty       => valor vazio (não tem nenhum valor dentro)
+null        => valor não exite (de propósito o valor não existe)
+underfined  => valor indefinido, ele não existe
+
+
