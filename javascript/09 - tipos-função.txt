@@ -77,21 +77,3 @@ Também pode ser utilizada com parâmetros ou armazenada em uma variável.
     console.log(resultsoma);    => retorna 3
     console.log(resultsub);     => retorna -1
 
-
-    ### parâmetros
-
-    #### Objeto "arguments"
-    Um array com todos os parâmetros passados quando a função foi invocada.
-
-function findMax(){
-    let max = infinity;
-
-    for(let i = 0; i < arguments.length; i++){
-        if(arguments[i] > max) {
-            max = arguments[i];
-        }
-    }
-
-    return max;
-}
-

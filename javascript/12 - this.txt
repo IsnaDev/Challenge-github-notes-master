@@ -1,0 +1,101 @@
+### This
+É uma referência de contexto.
+No exemplo, ths refere-se ao objeto pessoa.
+
+const pessoa = {
+    firstName: "Isnaíra",
+    lastName: "Souza",
+    id: 1,
+    fullName: function(){
+        return This.firstName + " " + This.lastName;
+    },
+    getId: function(){
+        return this.id;
+    }
+};
+
+pessoa.fullName();  => returna: Isnaíra Souza
+pessoa.getId();     => retorna: 1
+
+
+Seu valor pode mudar de acordo com o lugar no código onde foi chamada.
+
+Contexto                    Referência
+- em um objeto (método)      - Próprio objeto dono do método
+- sozinha                    - objeto global (em navegadores, window)
+- função                     - objeto global
+- evento                     - elemento que recebeu o evento
+
+
+### Call
+
+const pessoa = {
+    nome: "Isnaíra",
+};
+
+const animal = {
+    nome: "Stuart",
+};
+
+function getSomeThing(){
+    console.log(this.nome);
+}
+
+getSomeThing.call(pessoa)   => retorna Isnaíra
+getSomeThing.call(animal)   => retorna Stuart
+
+
+É possível passar parâmetros para essa função separando-os por vírgulas.
+
+const myObj = {
+    num1: 2,
+    num2: 4,
+};
+
+function soma(a, b){
+    console.log(this.num1 + this.num2 + a + b);
+}
+
+soma.call(myObj, 1, 5)  => retorna 12
+
+### Apply
+
+const pessoa = {
+    nome: "Isnaíra",
+};
+
+const animal = {
+    nome: "Stuart",
+};
+
+function getSomeThing(){
+    console.log(this.nome);
+}
+
+getSomeThing.apply(pessoa)   => retorna Isnaíra
+getSomeThing.apply(animal)   => retorna Stuart
+
+
+É possível passar parâmetros para essa função dentro de um array.
+
+const myObj = {
+    num1: 2,
+    num2: 4,
+};
+
+function soma(a, b){
+    console.log(this.num1 + this.num2 + a + b);
+}
+
+soma.call(myObj, [1, 5])  => retorna 12
+
+
+### Bind
+Clona a estrutura da função onde é chamada e aplica o valor do objeto passado como parâmetro.
+
+const retornaNomes = function(){
+    return this.nome;
+};
+let bruno = retornaNomes.blind({nome: 'Bruno'});
+
+bruno();     => retorna Bruno

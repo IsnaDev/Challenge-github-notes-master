@@ -1,0 +1,226 @@
+### if/else
+
+1) function numeroPostivo(num){
+    let resultado;
+
+    if(num < 0){ => condição
+        resultado = false; => Declaração 1 (dentro do if): ocorre caso a condição seja verdadeira
+    } else {
+        resultado = true; => Declaração 2 (dentro do else): ocorre caso a condição seja falsa
+    }
+    
+    return resultado
+    }
+
+2) function numeroPostivo(num){
+    let resultado;
+
+    const ehNegativo = num < 0;
+
+    if(ehNegativo){
+        resultado = false;
+    } else {
+        resultado = true;
+    }
+    
+    return resultado
+    }
+
+3) function numeroPostivo(num){
+    const ehNegativo = num < 0;
+
+    if(ehNegativo){
+        return = false;
+    }
+           
+    return true
+    }
+
+numeroPostivo(2)    => retorna true
+numeroPostivo(-9)   => retorna false
+
+4) function numeroPostivo(num){
+    const ehNegativo = num < 0;
+    const maiorQueDez = num > 10;
+
+    if(ehNegativo){
+        return "Esse número é negativo";
+    } else if(!{ehNegativo && maiorQueDez) {
+        return "Esse número é positivo e maior que 10"
+    }
+    
+    return "Esse número é positivo";
+    }
+
+    numeroPostivo(2)    => retorna "Esse número é positivo"
+    numeroPostivo(-2)   => retorna "Esse número é negativo"
+    numeroPostivo(40)    => retorna "Esse número é positivo e maior que 10"
+
+    Obs: JavaScript não tem elseif, as palavras sempre estão espaçadas.
+
+    ### Switch/case
+
+Equivale a uma comparação de tipo e valor (===);
+Sempre precisa de um valor "default";
+Ideal para quando se precisa comparar muitos valores.
+
+function getAnimal(id){
+    Switch(id){
+        case 1:
+        return "cão";
+        case 2:
+        return "gato";
+        case 3:
+        return "pássaro";
+        default: => quando o tipo e o valor é diferente do declarado na função 
+        return "peixe";
+    }
+}
+
+getAnimal(1)    => retorna cão
+getAnimal(4)    => retorna peixe
+getAnimal("1")  => retorna peixe
+
+
+### for
+Loop dentro de elementos iteráveis (array, string).
+
+function multiplicaPorDois(arr){
+    let multiplicados = [];
+
+    for(let i = 0; i < arr.length; i++){
+        multiplicados.push(arr[i] * 2);
+    }
+
+    return multiplicados;
+}
+
+const meusNumeros = [2, 33, 456, 356, 40];
+
+multiplicaPorDois(meusNumeros); => retorna [4, 66, 912, 712, 80]
+
+#### for...in
+Loop entre propriedades enumeráveis de um objeto.
+
+1) function forInExemplo(obj){
+    for(prop in obj){
+        console.log(prop);
+    }
+}
+
+const meuObjeto = {
+    nome: "Isnaíra",
+    idade: 35,
+    cidade: "Petrolina"
+}
+
+forInExemplo(meuObjeto);
+=> retorna
+nome
+idade
+cidade
+
+2) function forInExemplo(obj){
+    for(prop in obj){
+        console.log(obj[prop]);
+    }
+}
+
+const meuObjeto = {
+    nome: "Isnaíra",
+    idade: 35,
+    cidade: "Petrolina"
+}
+
+forInExemplo(meuObjeto);
+=> retorna
+Isnaíra
+35
+Petrolina
+
+
+#### for...of
+Loop entre estruturas iteráveis (array, strings)
+
+1) function logLetras(palavras){
+    for(letra of palavra){
+        console.log(letra);
+    }
+}
+
+const palavra = "abacaxi";
+
+logLetras(palavra) 
+=> retorna
+a
+b
+a
+c
+a
+x
+i
+
+2) function logNumeros(nums){
+    for(num of nums){
+        console.log(num);
+    }
+}
+
+const nums = [30, 20, 10];
+
+logLetras(palavra) 
+=> retorna
+30
+20
+10
+
+
+### While
+Executa instruções qté que a condição se torne falsa.
+
+function exemploWhile(){
+    let num = 0;
+
+    while(num <= 3){ => enquanto o número for menor ou igual a 3 ele vai encrementar + 1
+        console.log(num);
+        num++;
+    }
+}
+
+exemploWhile()
+=> retorna
+0
+1
+2
+3
+
+#### do...while
+Executa instruções qté que a condição se torne falsa.
+Porém a primeira execução sempre ocorre.
+
+1) function exemploDoWhile(){
+    let num = 0;
+
+    do{
+        console.log(num);
+        num++;
+    } while(num <= 3)
+}
+
+exemploDoWhile()
+=> retorna
+0
+1
+2
+3
+
+2) function exemploDoWhile(){
+    let num = 4;
+
+    do{
+        console.log(num);
+        num++;
+    } while(num <= 3)
+}
+
+exemploDoWhile()    => retorna 4
