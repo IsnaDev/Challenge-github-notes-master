@@ -1,0 +1,26 @@
+### Tipos de erros
+
+#### ECMASScript Error
+Erros que ocorrem em tempo de execução.
+
+Composto por: mensagens, nome, linha e Call Stack.
+
+
+#### DOMException
+erros relacionados ao Document Object Model (DOM).
+
+### Tratamento dos erros
+ #### Throw
+ Quando usado há um retorno no console que ocorreu um erro em vez de retornar uma string.
+
+ #### try..catch
+ 
+ #### Finally
+ instrução chamada existindo um erro ou não.
+
+ #### o objeto Error
+ Declarar o erro:
+
+ new Error (message, fileName, lineNumber) //todos os parâmetros são opcionais. os fileName e lineMunmber não são padrões. 
+ const meuErro = new Error ('Mensagem Invalida');
+ throw meuErro;
