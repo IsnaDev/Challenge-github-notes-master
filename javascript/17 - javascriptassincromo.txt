@@ -1,0 +1,82 @@
+### Assícromo
+Que não ocorre ou não se efetiva ao mesmo tempo.
+O JavaScript roda de maneira síncroma.
+
+#### promises
+Objeto de processamento assícromo.
+Inicialmente, seu valor é desconhecido.
+Ela pode, então, ser resolvida ou rejeitada.
+
+Tem 3 estados: pending, fulfilled e rejected
+
+Estrutura:
+const myPromise = new Promise((resolve,  reject) => {
+    window.setTimeout(() => {
+        resolve(console.log('Resolvida!'));
+    }, 2000)
+});
+
+await myPromise
+    .then((result) => result + ' passando pelo then')
+    .then((result) => result + ' e agora acabou!')
+    .then((arr) => console.log(err.message))
+Após 2 segundos, retornará o valor: "Resolvida passando pelo then e agora acabou!"
+
+#### async/await
+Funções assíncromas precisam dessas duas palavras chave.
+
+async function resolvePromise() {
+    const myPromise = new Promise((resolve,  reject) => {
+    window.setTimeout(() => {
+        resolve('Resolvida!');
+    }, 2000)
+});
+
+const resolved = await myPromise
+    .then((result) => result + ' passando pelo then')
+    .then((result) => result + ' e agora acabou!')
+    .then((arr) => console.log(err.message));
+
+    return resolved;
+}
+
+retorna: resolvida passando pelo then e agora acabou!
+
+utilizando try...catch
+
+async function resolvePromise() {
+    const myPromise = new Promise((resolve,  reject) => {
+    window.setTimeout(() => {
+        resolve('Resolvida!');
+    }, 2000)
+});
+
+let result:
+
+try {
+    result = await myPromise
+    .then((result) => result + ' passando pelo then')
+    .then((result) => result + ' e agora acabou!')
+} catch(err) {
+    result = err.message
+}
+    return result;
+}
+
+### APIs
+Application Programming Interface - Uma APi é uma forma de intermediar os resultados do back-end com o que é apresentado no front-end.
+Você consegue acessá-la por meio de URLs.
+
+#### Formato .JSON
+JavaScript Object Notation - é muito comum que APIs retornem seus dados no formato .json, portanto precisamos tratar esses dados quando os recebermos.
+
+#### Fetch
+consumindo APIs
+
+fetch(url, options)
+.then(response => response.json())
+.then(json => console.log(json))
+
+retorna um promise (precisa usar o await quando for utilizar o fetch)
+
+Operações no banco (POTS, GET, PUT, DELETE, etc)

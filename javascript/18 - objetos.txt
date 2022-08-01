@@ -1,0 +1,36 @@
+### Paradigmas
+Imperativo - como vai fazer (orientação à objetos)
+Declarativo - o que vai fazer (banco de dados)
+
+Os programas são objetos que possuem uma série de propriedades.
+
+#### Pilares:
+1. Herança - o objeto filho herda propriedades e métodos do objeto pai;
+2. Polimorfismo - objetos podem herdar a mesma classe pai, mas se comportam de forma diferente quando invoca os seus métodos;
+3. Encapsulamento - cada classe tem propriedades e métodos independentes do restante do código;
+4. Abstração - pegar um objeto complexo e torná-lo menos complexo (simplificar e generalizar). 
+
+### Protótipos
+Todos os objetos JavaScript herdam propriedades e métodos de um prototype.
+O objeto Object.prototype está no topo desta cadeia.
+
+
+### Classes
+Syntatic sugar: uma sintaxe feita para facilitar a escrita.
+
+class Meal {
+    constructor(food) {
+        this.food = food
+    }
+
+    eat() {
+        return ' '
+    }
+}
+
+O JavaScript não possui classes nativamente. Todas as classes são objetos e a herança se dá por protótipos.
+
+- construtor: constroi as classes e aceita parâmentros;
+- getter e setter: ter acesso a parâmentros de um objeto;
+- super(): manda os parâmentros para a função pai (para fazer herança);
+- métodos: instrunções de comportamentos para a classe filha, diferente da classe pai.

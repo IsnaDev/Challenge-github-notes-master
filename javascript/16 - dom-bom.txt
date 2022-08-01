@@ -1,0 +1,88 @@
+### DOM - Document Object Model
+O DOM HTML é um padrão de como acessar e modificar os elementos HTML de uma página.
+
+document:
+    root element (HTML):
+        element (head):
+            element (title):
+                text ("my title")
+
+        element (body):
+            attribute ("href)
+            element (a):
+                text ("my link")
+            element (h1):
+                text ("my header")   
+                     
+
+### BOM - Browser Object Model
+Tudo que está dentro do objeto window.
+
+No objeto window temos: documento (DOM), histórico, localização, tela e navegação. 
+
+
+#### Métodos
+selecionando os elementos de uma página.
+
+document.getElementById('titulo');                  => retorna: <h1 id= "titulo">minha página</h1>
+document.getElementByTagName('li');                 => retorna: [<li>project 1</li>, <li>project 2</li>]
+document.getElementByClassName('textos');           => retorna: [<section class= "textos"><h2>sobre mim</h2></section>, <section classe= "textos"><h2>sobre você</h2></section>]
+document.querySelectorAll('.classe1 .classe1');     => retorna: [<div classe= "classe1 classe1><ul><li class= "opcao">opção 1</li><li class= "opcao">opção 2</li></ul></div>]
+document.querySelectorAll('li .opcao');             => retorna: [<li class= "opcao">opção 1</li><li class= "opcao">opção 2</li>]
+
+
+#### Adicionar e deletar
+
+document.creatElement(element)      => cria um novo elemento HTML
+document.removeChild(element)       => remove um elemento
+document.appendElement(element)     => adiciona um elemento
+document.replaceChild(new, old)      => substitui um elemento
+
+
+#### Classes
+
+Element.classList
+<div id="meu-elemento" class="classe"></div>
+
+const meuElemento = document.getElementById("meu-elemento")
+meuElemento.classList.add("novo-estilo");   => adiciona a classe "novo-estilo"
+meuElemento.classList.remove("classe");     => remove a classe "classe"
+meuElemento.classList.toggle("dark-mode");  => adicina a classe "dark-mode" caso ela não faça parte da lista e remove ela caso faça
+
+Após rodar esses códigos:
+<div id="meu-elemento" class="novo-estilo dark-mode"></div>
+
+
+#### Classes
+
+Acessando diretamente o CSS de um elemento
+document.getElementByTagName("p").style.color = "blue";
+
+
+#### Eventos
+
+tipos:
+Evento do mouse: mouserover (utilizando o css), mouseout
+Evento de clique: click, dbclik (click duplo)
+Evento de atualização: change, load
+
+##### Acianando o evento
+
+Event listener (ele fica observando, aguardando o evento)
+Diretamente no JavaScript, cria um evento que vai ser acionado no momento em que o usuário realizar determinada ação.
+ 
+ const botao = document.getElementById("meuBotao");
+ botao.addEventListener("click", outraFuncao);
+
+ Atributo HTML
+ Especifica a função a ser chamada diretamente no elemento HTML
+ <html>
+    <body>
+        <h1 onclick="mudaTexto(this)">Clique aqui</h1>
+    <script>
+        function mudaTexto(id){
+            id.innerHTML = "Mudei!"; => quando clicar no texto "Clique aqui", vai mudar para "Mudei!".
+        }
+    </script>
+    </body>
+</html> 
