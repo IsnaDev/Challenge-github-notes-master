@@ -1,0 +1,39 @@
+INTERFACE: para definir contratos de estruturas de dados ou de classes;
+TYPE: juntar diferentes interfaces.
+
+### TypeScript
+
+Superset do JavaScript:
+    Linguagem construída por cima do JavaScript;
+    Adiciona features à linguagem original;
+    Compila para JavaScript.
+
+#### Porque usar TypeScript?
+Adiciona definição estática de tipos:
+    Funcionalidades do código mais explícitas;
+    Maior segurança durante o desenvolvimento;
+    Detecta erros durante a compilação que só seriam percebidos em execução;
+Compila um JavaScript mais resiliente;
+Ajuda a desenvolver boas práticas de programação.
+
+
+#### O que vamos usar:
+Node;
+TypeScript;
+Recomendado usar o Visual Studio Code.
+
+#### Setup do ambiente
+Projeto Node:
+    instalar o Node;
+    abrir a pasta do projeto com o terminal;
+    inserir 'npm init';
+    confirmar todas as configurações.
+TypeScript:
+    npm install -g typescript (se possível); (globalmente)
+    npm install typescript.
+
+Repositório: https://github.com/lira1705/mentoria-typescript
+
+Obs: função tipo void não retorna nada
+     callback é uma função que passa com parâmentro, ela vai rodar quando uma certa ação ocorrer
+     

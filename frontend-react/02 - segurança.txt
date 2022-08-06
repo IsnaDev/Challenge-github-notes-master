@@ -1,0 +1,142 @@
+### Segurança da informação
+Criptografia por chave & Certificado digital
+
+#### Criptografia por chave
+• Assimétrica
+    • Chave privada;
+        Assinatura - criptografia
+    • Chave pública
+        verificação de autenticidade
+    
+• Simétrica
+    • Chave única privada (cifra de césar - substituição da letra pela K-ésima do alfabeto(rotatividade do alfabeto))
+        Conhecimento prévio da chave
+        Como transferir a chave?
+
+    Criptografia por Chave
+        Tipos:
+        • Cifra de fluxo:
+            • Sequência de bits pseudo-aleatório
+            • Mapeamento 1 para 1
+        • Cifra de bloco (SSL, PGP, Ipsec)
+            Possibilidades?
+                • Mapeamento por permutação
+                • 8!
+                • Mapeamento por função - permutação
+
+#### Certificado digital
+Certificação de chave pública
+
+• O que é certificar uma chave?
+    Comprovar autenticidade
+
+• Entidade certificadora - Certification Authority - CA
+    • Verificação de identidade (Alta confiabilidade);
+    • Emissão de certificados (Vínculo entre chave e entidade)
+
+    Padrões de autoridades certificadoras
+        • IETF - recomendação ITUX.509
+            Especificação de um serviço de autenticação e sintaxe de certificados
+        • RFC 1422
+            Gerenciamento de chaves baseado em CA em emails seguros
+        
+
+#### Protocolo SSL
+Secure Socket Layer – SSL
+
+• Segurança para conexões TCP;
+• Confidencialidade;
+• Integridade;
+• Autenticidade end-point
+
+##### Operações do SSL Data Transfer
+
+Operação - fases
+• Transferencia efetiva de dados
+• Record+Mac
+    verificação de integridade da mensagem
+        Data stream = Record + Mac + ... + Record + Mac
+
+##### HTTP + SSL
+Segurança na comunicação - HTTP
+    Over TCP
+
+Verificação da autenticidade por certificados digitais
+    Porta 443
+
+#### LGPD
+LGPD – Lei Geral de Proteção de Dados
+
+• Promulgada em 2018;
+• Entrou em vigor em Agosto de 2020;
+    Lei de segurança da informação
+• N° 13.709/2018
+• GDPR – General Data Protection Regulation legislação europeia
+• Legislação do estado da Califórnia - EUA
+
+O que a lei protege?
+• Dados de identificação dos usuários
+• Dados sensíveis
+    Religião, etnia
+• Define o tratamento de dados - Diversos tipos de operações
+• Livre conssentimento
+• Direitos do titular das informações
+• Sações aos que descumprirem as regras
+
+Criação da ANPD (Agencia Nacional de proteção de dados)
+• Zelar pela proteção dos dados;
+• Elaboração de diretrizes para politica nacional de proteção;
+• Promover conhecimentodas normas
+• Editar regulamentos
+• Realizar auditorias
+
+Quem deve seguir a lei?
+• Empresas que precisam manter um BD - Funcionários e Usuários
+Devem garantir ao titular sigilo das informações
+
+#### Web app
+1. Conexões subjacentes
+2. Alto overhead
+3. Mapeamento vis script
+
+#### WebSocket
+O protocolo fonece comunicação cliente/servior executando um código não
+confiável em um ambiente controlado para o host que escolheu essa comunicação.
+
+##### WebSocket connection
+Header adicional => Subprotocol Selector
+routeSelectionExpression (aceita apenas o JSON ONLY)
+
+Filosofia do WebSocket:
+1. Origin-base security model (Restringe as páginas web)
+2. Endereçamento e protocolo
+3. Camadas -> enquadramento on top TCP
+4. Encerramento do handshake
+
+Outras características:
+Campos Sec-...: No Edition
+Independente do TCP
+Interpretação do HTTP server
+Porta 443
+
+#### Comunicação
+• Proxy
+• HTTP server
+• DNS – Domain Name System
+• Socket
+• Load balancer
+
+
+DNS:
+TCP/IP MODEL
+Aplicação
+Transporte
+Rede
+Enlace
+
+Socket TCP - faz mapeamento da camanda que está com a camada superior
+
+Objetos web em cache
+Update
+Distribuição de carga
+Multiplexação
