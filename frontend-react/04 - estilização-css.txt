@@ -1,0 +1,63 @@
+### Inline
+Maneira mais prática e direta;
+AjustenRrápido;
+Teste de estilo;
+Difícil manuteção.
+
+### Classes
+Em JSX, define-se classes pelo atributo className - maneira mais rápida e direta
+Pouca flexibilidade;
+Conflitos com nomes
+
+### Stateful
+Usa estados;
+Possui gerenciamento de estados no componente;
+Construídos usando classes em JavaScript.
+
+ #### Ciclo de vida
+ - Inicialização (initialization):
+    setup props - o que o componente recebe por parâmentro, que são as propriedades.
+    state - inicialização dos estados iniciais do componente
+- Montagem (mounting):
+    componentWillMount - antes da renderização
+    render - o react renderiza o componente
+    componentDidmount - depois da renderização
+- Atualização (updation):
+    Props:
+        componentWillRecentiveProps
+        shouldComponentUpDate
+        componentWillUpDate
+        render
+        componentDidUpDate
+    State:
+        shouldComponentUpDate
+        componentWillUpDate
+        render
+        componentDidUpDate
+- Desmontagem (unmounting):
+    componentWillUnmount    
+
+### Stateless
+Não usa estados;
+Não possui gerenciamento de estados no componente;
+Construídos usando funções em JavaScript.
+
+#### Stateful vs Stateless
+A  nomeclatura foi atualizada: Class Components; Function Components
+Com hooks, estados são manipuláveis em Function Components.
+
+#### Formulários
+Mantêm un estado interno.
+Em HTML, <input>, <textarea> e <select> têm um estado interno.
+Em React, podemos controlar o estado: state; setState.
+
+##### Componente controlado
+Tanto select, input ou textarea aceitam um atributo value.
+Podemos mudar esse valor usando o atributo onChange.
+
+##### Componente não controlado
+A tag input é read-only
+
+#### Bibliotecas
+Formik;
+Redux-forms.

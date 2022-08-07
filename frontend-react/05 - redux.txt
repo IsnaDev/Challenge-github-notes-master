@@ -1,0 +1,120 @@
+### Flux
+É um padrão de projeto para tráfego de dados de maneira unidirecional.
+Criado por Dan Abramov e Andrew Clark em 2015;
+Redux é um implementação de Flux: possui algumas diferenças.
+
+Arquitetura Flux
+Action: é como um telégrafo - ele formata a mensagem a ser enviada.
+Dispatcher: é como um telefonista - ele sabe todos os callbacks para diferentes Stores.
+Store: é como um gerente super controlador - ele guarda a informação e todas as alterações têm que ser feitas por ele mesmo, mais ninguém
+View: é como um gerente intermediário (middleware) que recebe as notificações da store e passa os dados para as visões abaixo dela.
+
+Diversas implementações:
+Redux (mais popular);
+Reflux;
+Modux;
+Vuex (baseado em Redux e Elm);
+NgRx/store (baseada em Redux e RxJS).
+
+Bibliotecas baseadas em Flux
+Servem para comunicação entre componentes;
+Centralizam a informação;
+"Flux libraries are like glasses: you'll know when you need them." - Dan Abramov
+
+#### 3 princípios:
+Single source of truth: uma única store;
+State é read-only;
+Mudanças são feitas com pure functions.
+
+Actions -  Em redux:
+    Actions são como o Flux;
+    Diferença: Actions não enviam a action em si para o Dispatcher;
+    Retornam um objeto de action formatado.
+
+Store - em Flux: diversas Stores;
+        em redux: uma única store;
+        A store aqui cuida de toda a árvore de estados;
+        Os reducers que cuidam de descobrir qual estado muda..
+
+reducers - em reduxnão há Dispatcher (simplifica e divide o trabalho da store);
+           A store se conecta ao root reduce, que divide os estados em pequenos reduces para descobrir como lidar com esses estados;
+           Os estados aqui são imutáveis.
+
+Views - Em react: adiciona na camada de View 3 novos conceitos para conectar a View à store (provider, connect() e selector).
+
+#### Instalando o redux
+npm install react-redux
+npm install --save-dev redux-devtools
+
+
+### APIs HTTP
+Servem para conectar a um ou mais servidores HTTP: GET, POST, DELETE, PUT.
+Fetch API
+Axios
+
+#### Fetch API
+nativa so browser;
+oferece uma alternativa ao XMLHttpRquest() e JQuery.ajax();
+suporta a service workers;
+Algumas diferenças: não envia nem recebe cookies (precisa definir a opção credentials); não rejeita o status do erro HTTP.
+
+#### Axios
+lib de HTTP API;
+Cross-browser;
+pode monitorar o progresso de um request;
+melhor tratamento de erros;
+melhor teste.
+
+### Imutabilidade
+Uma vez criaa, uma coleção (array, objeto...) não pode ser alterada;
+Novas coleções podem ser criadas a partir de uma coleção anterior e uma mutação (setter) como um conjunto;
+Novas coleções são criadas usando o máximo possível da estrutura original, reduzindo a cópia e aumentando a performance.
+ 
+ Benefícios: performance, programação mais simples, debugging mais simples (detecção de mudancas).
+
+ #### Imutabilidade e react
+ Se você quer performance em react, use dados imutáveis; você conseguevusandono shouldComponentUpdate ou react.PureComponent.
+   
+Problema: O PureComponent vai fazer uma comparação rasa entre valores antigos e novos de this.props.words.
+O código muda words no handleClick do WorkAdder, mas mesmo mudando as palavras elas serão consideradas iguais.
+
+#### immutable.js
+Biblioteca que oferece coleções persistentes e imutáveis. Permite detecção barata de alteração nos objetos.
+
+Outras libs:  Immer, immutability-helper, seamless-immutable.
+
+Imutabilidade é pré requisito no Redus:
+    Redux e React-Redux utilizam comparações rasas;
+    Manipulação de dados mais segura;
+    Time-travel debugging.
+Os reducers dividem o objeto de estados em domínio por chave;
+CombineReducers chega mudanças usando comparação rasa:
+    fazem a interação nos reducers;
+    criam um novo objeto de estados a partir dos estados retornados por cada reducer.
+connect gera componentes que fazem comparação rasa com o estado root.
+Retornam o valor para a função mapStateToProps, verificando aqueles que precisam de uma operação de re-render.
+
+#### Redux + Rest 
+Suponha um sistema de notificações ou um sistema de logging. você precisa manter a sincronia, independente da tela onde estiver.
+Uma maneira de resolver fácil seria armazenar os dados do serviço no Redux.
+
+Redux Middlewares
+Provê uma camada entre o disparo de uma ação e o momento que ela atinge o reducer.
+Utilizados para uma variedade de funções, entre elas chamadas de APIs de serviço.
+
+Exemplo: imagine um sistema de log, onde toda action disparada em um sistema é impressa com o log na tela>
+Tentativa 1: logging manual;
+Tentativa 2: encapsulando o Dispatch;
+Tentativa 3: "gambiarra" para substituir o Dispatch;
+Tentativa 4: escondendo a "gambiarra";
+Tentativa 5: removendo a "gambiarra";
+Tentativa 6: aplicando o middleware na mão.
+
+3 diferenças do applyMiddleware() do Redux:
+Só expõe um subconjunto da Store API para o middleware: Dispatch e getState;
+Fica difícil saber se store.Dispatch(action) vai realmente percorrer a cadeia do middleware de novo;
+Opera em cima de createStore() ao invés da store em si.
+
+Os mais usados são: redux-thunk e redux-saga.
+
+Redux thunk - um thunk é uma função que chama outra função.

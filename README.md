@@ -16,6 +16,9 @@ Project challenge on Git and Github from DIO (first repository)
 - Positioning elements with Flexbox in CSS;
 - Web development;
 - Module: Mastering the JavaScript programming language;
+- Main internet communication protocols;
+- Introduction to reactjs;
+- Development of applications for internet with reactjs
 
 
 ## 🤝👩🏻 Collaborator

@@ -1,0 +1,26 @@
+### TDD
+Teste-Driven Development;
+Antecipar erros a nível de desenvolvimento - Teste escrito antes da funcionalidade;
+Não descarta a presença de um tester.
+
+Teste unitário - função, serviço, página...
+Teste End-to-End (E2E) - de ponta a ponta, testa o fluxo.
+Teste de componente- usa o react-testing-library
+
+### BDD
+Behavior-Driven Development;
+Teste de especificação - une especificação, teste automatizado e premissa de teste (documento de teste).
+
+BDD e Sintaxe Gherkin
+Sintaxe de steps para definer cenários. Descreve cada funcionalidade por feature (caso de uso).
+
+### debugging
+Depuração é o processo de encontrar e reduzir defeitos em um software.
+
+Ferramentas: chrome devtools, redux devtools, react devtools.
+
+tratamento de erro
+Resiliência de SW e Segurança.
+tratamento em funções, em forms, em retorno de APIs
+    em componentes: em javascript usa propTypes, pode usar linguaguens tipadas como TypeScript, definindo interfaces.
+    
